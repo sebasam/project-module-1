@@ -1,38 +1,198 @@
 /* paleta de colores: oscuro #222831  oscuro claro #393E46 cyan oscuro #00ADB5 cyan #00FFF5 */
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Poppins&display=swap');
-body{
-    font-family: 'Lato', sans-serif;
-    font-family: 'Poppins', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Poppins&display=swap");
+body {
+  font-family: "Lato", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+/* estilo de los botones */
+button {
+  background: linear-gradient(-45deg, #3f00b5, #9f69fe, #27c8b7, #3f00b5);
+  background-size: 800% 400%;
+  padding: 1em 2em;
+  display: inline-block;
+  border: none;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: 700;
+  color: white;
+  transition: all 0.5s ease-in-out;
+  animation: gradient 10s infinite cubic-bezier(0.62, 0.28, 0.23, 0.99) both;
+}
+
+button:hover {
+  animation: gradient 3s infinite;
+  transform: scale(1.05);
+}
+
+button:active {
+  animation: gradient 3s infinite;
+  transform: scale(0.8);
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* fin de estilo de los botones */
+/* estilo de las tarjetas de los empleados */
+.team-card {
+  width: 190px;
+  height: 254px;
+  background: #26007e;
+  border-radius: 15px;
+  box-shadow: 1px 5px 60px 0px #100a886b;
+}
+.team-card .card-border-top {
+  width: 60%;
+  height: 3%;
+  background: #2d23fa;
+  margin: auto;
+  border-radius: 0px 0px 15px 15px;
+}
+.team-card span {
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  display: block;
+  padding-top: 10px;
+  font-size: 17px;
+}
+.team-card .job {
+  font-weight: 400;
+  color: white;
+  display: block;
+  text-align: center;
+  padding-top: 5px;
+  font-size: 12px;
+}
+.team-card .img {
+  width: 70px;
+  height: 80px;
+  background: #2d23fa;
+  border-radius: 15px;
+  margin: auto;
+  margin-top: 25px;
+}
+.team-card button {
+  padding: 8px 25px;
+  display: block;
+  margin: auto;
+  border-radius: 15px;
+  border: none;
+  margin-top: 30px;
+  background: #2d23fa;
+  color: white;
+  font-weight: 600;
+}
+/* fin estilo de las tarjetas de los empleados */
+/* logo */
+.logo {
+  background-color: black;
+  border-radius: 15px;
 }
 /* estilo de los enlaces de la barra de navegación */
-.nav-link{
-    color: white;
-    font-size: 15px;
-    text-decoration: dotted;
-    margin-right: 10px;
+.nav-link {
+  color: black;
+  font-size: 25px;
+  text-decoration: none;
+  margin-right: 10px;
+  background-color: white;
+  border-radius: 10px;
+  opacity: 0.5;
+}
+.nav1 {
+  display: flex;
+  justify-content: center;
 }
 /* estilo de los enlaces de la barra de navegación al pasar el mouse */
-.link-active:hover{
-    color: #00FFF5;
+.link-active:hover {
+  background-color: #00fff5;
+  font-size: 28px;
+  opacity: 3;
+}
+.link-active {
+  transition: 0.9s all;
 }
 /* Boton de la barra de navegacion en pantallas mas pequeñas */
-.navbar-toggler{
-    border-color: #00FFF5;
-    color: white;
+.navbar-toggler {
+  border-color: #00fff5;
+  color: white;
 }
-.navbar-toggler-icon{
-    background-image: url('../img/dollar.png');
+.navbar-toggler-icon {
+  background-image: url("../img/dollar.png");
 }
 /* estilo del logotipo */
-#logo{
-    height: 120px;
+#logo {
+  height: 120px;
 }
 /* Estilo del contenedor index, la seccion principal */
-#bg-index{
-    background-image: url('../img/gif/background.gif');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 700px;
-    margin-top: 100px;    
+#bg-index {
+  background-image: url("../img/que-es-el-tranding.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+  max-width: 100%;
+}
+#container-bg-index {
+  margin-top: 150px;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+/* contenido de bg-index */
+.container-1 {
+  border: solid 1px gray;
+  padding: 20px 20px;
+  font-size: 20px;
+  background-color: #1f1d1d;
+  box-shadow: 1px 5px 25px rgba(0, 0, 0, 0.45);
+  border-radius: 5px;
+  color: white;
+  display: flex;
+}
+/* team */
+.title2 {
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+.card:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
+}
+.card {
+  margin-top: 15px;
+}
+
+.card .card-body {
+  text-align: center;
+  line-height: 1.5;
+}
+.card .card-body button {
+  margin-top: 3px;
+}
+
+.card .card-body button a {
+  text-decoration: none;
+  color: white;
+}
+.container-2 {
+  max-width: 100%;
+  background-color: #1f1d1d;
+  margin: 5px 5px;
+}
+.image-cards {
+  border: solid rgb(4, 4, 160) 5px;
 }
