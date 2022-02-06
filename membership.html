@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
     <title>Membresia</title>
-    <link rel="stylesheet" href="membership-css/css/membership.css">
+    <link rel="stylesheet" href="./css/membership.css">
     <link href="https://fonts.googleapis.com/css?family=Lato|Liu+Jian+Mao+Cao&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="contenedor">
         <!-- formulario datos personales -->
-        <form action="" class="formulari-datos" id="form1">
+        <form class="formulari-datos" id="form1">
             <h1>Formulario de membresia</h1>
             <hr>
             <label for="name">Nombres</label>
@@ -23,17 +23,17 @@
             <input type="number" id="documento" autocomplete="off" required>
             <label for="nacimiento">Fecha de nacimiento:</label>
             <input type="date" id="nacimiento"  required
-            value="2018-07-22"
+            value="1999-07-22"
             min="1950-01-01" max="2000-12-31">
             <label for="email">E-mail</label>
             <input type="email" id="email" autocomplete="off" required>
             <label for="password">Contraseña</label>
             <input type="password" id="password" required maxlength="20" minlength="12"> 
-            <button class="btn-datos"  id="btn-data">Enviar Datos</button>
+            <button class="btn-datos" type="submit" id="btn-data">Enviar Datos</button>
             <button class="btn-reiniciar" id="btn-reset">Borrar Datos</button>
 
         </form>
-        <!-- targeta -->
+        <!-- tarjeta -->
         <section class="targeta" id="targeta">
             <div class="delantera">
                 <div class="logo-marca" id="logo-marca">
@@ -127,7 +127,7 @@
 
     
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
-    <script src="membership-css/js/membership.js"></script>
-    <script src="membership-css/js/formValidation.js"></script>
+    <script src="./js/membership.js"></script>
+    <script src="./js/formValidation.js"></script>
 </body>
 </html>

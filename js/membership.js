@@ -1,18 +1,18 @@
 const tarjeta = document.querySelector('#targeta')
-    btnAbrirformulario = document.querySelector('#btn-abrir-formulario')
-    formulario = document.querySelector('#formulario-tarjeta')
-	numeroTarjeta = document.querySelector('#targeta .numero')
-	nombreTarjeta = document.querySelector('#targeta .nombre')
-	logoMarca = document.querySelector('#logo-marca')
-	firma = document.querySelector('#targeta .firma p')
-	mesExpiracion = document.querySelector('#targeta .mes')
-	yearExpiracion = document.querySelector('#targeta .year')
-	ccv = document.querySelector('#targeta .ccv');
+let btnAbrirformulario = document.querySelector('#btn-abrir-formulario')
+let formulario = document.querySelector('#formulario-tarjeta')
+let	numeroTarjeta = document.querySelector('#targeta .numero')
+let	nombreTarjeta = document.querySelector('#targeta .nombre')
+let	logoMarca = document.querySelector('#logo-marca')
+let	firma = document.querySelector('#targeta .firma p')
+let	mesExpiracion = document.querySelector('#targeta .mes')
+let	yearExpiracion = document.querySelector('#targeta .year')
+let	ccv = document.querySelector('#targeta .ccv');
 
 //volteamos la trageta para mostrar el frente
 const mostrarFrente = ()=>{
-	if(targeta.classList.contains('active')){
-		targeta.classList.remove('active');
+	if(tarjeta.classList.contains('active')){
+		tarjeta.classList.remove('active');
 	}
 }
 
