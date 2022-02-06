@@ -1,0 +1,37 @@
+/* paleta de colores: oscuro #222831  oscuro claro #393E46 cyan oscuro #00ADB5 cyan #00FFF5 */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Poppins&display=swap');
+body{
+    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+/* estilo de los enlaces de la barra de navegación */
+.nav-link{
+    color: white;
+    font-size: 15px;
+    text-decoration: dotted;
+    margin-right: 10px;
+}
+/* estilo de los enlaces de la barra de navegación al pasar el mouse */
+.link-active:hover{
+    color: #00FFF5;
+}
+/* Boton de la barra de navegacion en pantallas mas pequeñas */
+.navbar-toggler{
+    border-color: #00FFF5;
+    color: white;
+}
+.navbar-toggler-icon{
+    background-image: url('../img/dollar.png');
+}
+/* estilo del logotipo */
+#logo{
+    height: 120px;
+}
+/* Estilo del contenedor index, la seccion principal */
+#bg-index{
+    background-image: url('../img/gif/background.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+}
