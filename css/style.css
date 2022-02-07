@@ -4,6 +4,13 @@ body {
   font-family: "Lato", sans-serif;
   font-family: "Poppins", sans-serif;
 }
+footer{
+  background-color: #222831;
+background-image: -webkit-linear-gradient(270deg, #222831 0%, #344e4e 55%, #222831 100%);
+background-image: -moz-linear-gradient(270deg, #222831 0%, #344e4e 55%, #222831 100%);
+background-image: -o-linear-gradient(270deg, #222831 0%, #344e4e 55%, #222831 100%);
+background-image: linear-gradient(270deg, #222831 0%, #344e4e 55%, #222831 100%);
+}
 /* estilo de los botones */
 button {
   background: linear-gradient(-45deg, #3f00b5, #9f69fe, #27c8b7, #3f00b5);
@@ -44,61 +51,33 @@ button:active {
 }
 /* fin de estilo de los botones */
 /* estilo de las tarjetas de los empleados */
-.team-card {
-  width: 190px;
-  height: 254px;
-  background: #26007e;
-  border-radius: 15px;
-  box-shadow: 1px 5px 60px 0px #100a886b;
-}
-.team-card .card-border-top {
-  width: 60%;
-  height: 3%;
-  background: #2d23fa;
-  margin: auto;
-  border-radius: 0px 0px 15px 15px;
-}
-.team-card span {
-  font-weight: 600;
-  color: white;
-  text-align: center;
-  display: block;
-  padding-top: 10px;
-  font-size: 17px;
-}
-.team-card .job {
-  font-weight: 400;
-  color: white;
-  display: block;
-  text-align: center;
-  padding-top: 5px;
-  font-size: 12px;
-}
-.team-card .img {
-  width: 70px;
-  height: 80px;
-  background: #2d23fa;
-  border-radius: 15px;
-  margin: auto;
-  margin-top: 25px;
-}
-.team-card button {
-  padding: 8px 25px;
-  display: block;
-  margin: auto;
-  border-radius: 15px;
-  border: none;
-  margin-top: 30px;
-  background: #2d23fa;
-  color: white;
-  font-weight: 600;
-}
+/* From cssbuttons.io by @Tiagoadag */
+.card {
+  width: 252px;
+  height: 354px;
+  background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+  border-radius: 20px;
+  transition: all .3s;
+ }
+ 
+ .card2 {
+  width: 250px;
+  height: 354px;
+  background-color: #1a1a1a;
+  border-radius: 20px;
+  transition: all .2s;
+ }
+ 
+ .card2:hover {
+  transform: scale(0.98);
+  border-radius: 20px;
+ }
+ 
+ .card:hover {
+  box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+ }
 /* fin estilo de las tarjetas de los empleados */
-/* logo */
-.logo {
-  background-color: black;
-  border-radius: 15px;
-}
+
 /* estilo de los enlaces de la barra de navegación */
 .nav-link {
   color: black;
@@ -133,6 +112,11 @@ button:active {
 /* estilo del logotipo */
 #logo {
   height: 120px;
+  background-color: black;
+  border-radius: 15px;  
+}
+.logo{
+  height: 250px;
 }
 /* Estilo del contenedor index, la seccion principal */
 #bg-index {
@@ -151,6 +135,39 @@ button:active {
   backdrop-filter: blur(5.5px);
   -webkit-backdrop-filter: blur(5.5px);
   border: 1px solid rgba(255, 255, 255, 0.18);
+}
+/* backgroun seccion simulator */
+#team{  
+  background-color: #222831;
+  background-image: -webkit-linear-gradient(270deg, #222831 0%, #344e4e 55%, #222831 100%);
+  background-image: -moz-linear-gradient(270deg, #222831 0%, #344e4e 55%, #222831 100%);
+  background-image: -o-linear-gradient(270deg, #222831 0%, #344e4e 55%, #222831 100%);
+  background-image: linear-gradient(270deg, #222831 0%, #344e4e 55%, #222831 100%);
+}
+.img-team{
+  border-radius: 100px;
+  height: 120px;
+  width: 100px;
+  margin-top: 60px;
+  filter: grayscale();
+}
+#simulator{
+  background-color: #c1fff3;
+  background-image: -webkit-linear-gradient(45deg, #c1fff3 0%, #ffffff 100%);
+  background-image: -moz-linear-gradient(45deg, #c1fff3 0%, #ffffff 100%);
+  background-image: -o-linear-gradient(45deg, #c1fff3 0%, #ffffff 100%);
+  background-image: linear-gradient(45deg, #c1fff3 0%, #ffffff 100%);
+}
+/* estilo de l texto del simulator */
+#simulator-call{
+  color: #00ADB5;
+}
+#membership{
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask2477%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='url(%23SvgjsLinearGradient2478)'%3e%3c/rect%3e%3cpath d='M0 465.99L10 408.38L20 431.41L30 461.19L40 400.86L50 337.91L60 394.21L70 392.59L80 456.38L90 507.26L100 521.8L110 543.26L120 549.17L130 491.68L140 441.72L150 486.57L160 530.92L170 523.28L180 507.43L190 551.69L200 503.86L210 487.43L220 490.7L230 506.45L240 488.15L250 493.99L260 490.64L270 437.83L280 450.4L290 407.4L300 411.81L310 474.73L320 407.58L330 469.79L340 432.44L350 394.89L360 335.51L370 297.33L380 282.13L390 278.34L400 252.37L410 283.74L420 316.28L430 332.4L440 358.24L450 300.14L460 297.32L470 298.57L480 346.2L490 359.23L500 364.68L510 334.09L520 338.03L530 388L540 394.81L550 344.26L560 355.23L570 294.82L580 362.26L590 403.12L600 446.25L610 486.53L620 427.95L630 364.04L640 318.14L650 319.37L660 270.17L670 263.17L680 279.99L690 216.21L700 252.09L710 320.1L720 259.02L730 233.73L740 226.59L750 226.87L760 214.94L770 225.13L780 195.5L790 206.4L800 182.1L810 246.07L820 307.12L830 363.74L840 406.24L850 413.33L860 358.51L870 347.6L880 390.57L890 328.33L900 379.23L910 322.58L920 331.94L930 326.96L940 353.22L950 317.26L960 328.47L970 327.32L980 312.31L990 244.79L1000 255.57L1010 289.94L1020 227.97L1030 253.01L1040 279.58L1050 343.66L1060 382.79L1070 424.9L1080 371.44L1090 330.99L1100 269.75L1110 301.27L1120 272.57L1130 282.47L1140 306.17L1150 363.55L1160 425.6L1170 475.05L1180 472.72L1190 410.48L1200 358.86L1210 393L1220 342.57L1230 394.37L1240 331.66L1250 353.59L1260 353.61L1270 385.61L1280 396.69L1290 375.82L1300 382.36L1310 402.72L1320 400.22L1330 447.36L1340 474.51L1350 409.65L1360 461.83L1370 475.52L1380 444.42L1390 460.42L1400 458.05L1410 497.97L1420 444.92L1430 438.51L1440 395.19' stroke='rgba(0%2c 255%2c 245%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M0 465.99L10 408.38L20 431.41L30 461.19L40 400.86L50 337.91L60 394.21L70 392.59L80 456.38L90 507.26L100 521.8L110 543.26L120 549.17L130 491.68L140 441.72L150 486.57L160 530.92L170 523.28L180 507.43L190 551.69L200 503.86L210 487.43L220 490.7L230 506.45L240 488.15L250 493.99L260 490.64L270 437.83L280 450.4L290 407.4L300 411.81L310 474.73L320 407.58L330 469.79L340 432.44L350 394.89L360 335.51L370 297.33L380 282.13L390 278.34L400 252.37L410 283.74L420 316.28L430 332.4L440 358.24L450 300.14L460 297.32L470 298.57L480 346.2L490 359.23L500 364.68L510 334.09L520 338.03L530 388L540 394.81L550 344.26L560 355.23L570 294.82L580 362.26L590 403.12L600 446.25L610 486.53L620 427.95L630 364.04L640 318.14L650 319.37L660 270.17L670 263.17L680 279.99L690 216.21L700 252.09L710 320.1L720 259.02L730 233.73L740 226.59L750 226.87L760 214.94L770 225.13L780 195.5L790 206.4L800 182.1L810 246.07L820 307.12L830 363.74L840 406.24L850 413.33L860 358.51L870 347.6L880 390.57L890 328.33L900 379.23L910 322.58L920 331.94L930 326.96L940 353.22L950 317.26L960 328.47L970 327.32L980 312.31L990 244.79L1000 255.57L1010 289.94L1020 227.97L1030 253.01L1040 279.58L1050 343.66L1060 382.79L1070 424.9L1080 371.44L1090 330.99L1100 269.75L1110 301.27L1120 272.57L1130 282.47L1140 306.17L1150 363.55L1160 425.6L1170 475.05L1180 472.72L1190 410.48L1200 358.86L1210 393L1220 342.57L1230 394.37L1240 331.66L1250 353.59L1260 353.61L1270 385.61L1280 396.69L1290 375.82L1300 382.36L1310 402.72L1320 400.22L1330 447.36L1340 474.51L1350 409.65L1360 461.83L1370 475.52L1380 444.42L1390 460.42L1400 458.05L1410 497.97L1420 444.92L1430 438.51L1440 395.19L1440 560L0 560z' fill='url(%23SvgjsLinearGradient2479)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask2477'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='15.28%25' y1='139.29%25' x2='84.72%25' y2='-39.29%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient2478'%3e%3cstop stop-color='rgba(2%2c 69%2c 73%2c 1)' offset='0.03'%3e%3c/stop%3e%3cstop stop-color='rgba(0%2c 246%2c 190%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='50%25' y1='0%25' x2='50%25' y2='100%25' id='SvgjsLinearGradient2479'%3e%3cstop stop-opacity='0.65' stop-color='rgba(0%2c 255%2c 245%2c 1)' offset='0'%3e%3c/stop%3e%3cstop stop-opacity='0' stop-color='%23e0fffe' offset='0.8'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+  height: 500px;
+}
+#membership-link{
+  color: #f7cd5b;
 }
 /* contenido de bg-index */
 .container-1 {
@@ -196,3 +213,52 @@ button:active {
 .image-cards {
   border: solid rgb(4, 4, 160) 5px;
 }
+/* iconos redes sociales */
+.icon {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: 20px;
+  border-radius: 50%;
+  transition: all .8s;
+  cursor: pointer;
+}
+
+.icon:hover {
+  background-color: #e60073;
+  box-shadow:  0 0 20px #e60073 ;
+}
+
+.icon:hover:nth-child(2) {
+  background-color: #1877f2;
+  box-shadow:  0 0 20px #1877f2;
+}
+
+.icon:hover:nth-child(3) {
+  background-color: #25d366;
+  box-shadow: 0 0 20px #25d366 ;
+}
+
+.icon:hover:nth-child(4) {
+  background-color: #1da1f2;
+  box-shadow:  0 0 20px #1da1f2 ;
+}
+
+.icon i {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 1.7rem;
+}
+
+svg circle {
+  stroke-dasharray: 150;
+  transition: all .8s ease-in-out;
+}
+
+.icon:hover circle {
+  stroke-dasharray: 220;
+}
+/* fin iconos redes sociales */

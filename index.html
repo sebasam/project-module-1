@@ -8,13 +8,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./img/logo.png" />
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
   <header>
     <!-- Inicio barra de navegación -->
     <nav class="navbar navbar-expand-lg bg-transparent fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"><img src="./img/logo.png" alt="logo" class="logo" id="logo"></a>
+          <a class="navbar-brand" href="index.html"><img src="./img/logo.png" alt="logo" id="logo"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -24,7 +25,7 @@
                 <a class="nav-link link-active" aria-current="page" href="#bg-index">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link  link-active" href="#services">Equipo</a>
+                <a class="nav-link  link-active" href="#team">Equipo</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link  link-active" href="#simulator">Simulador</a>
@@ -46,11 +47,11 @@
   <article>
     <div class="container">
       <div class="row text-center">
-        <div class="col" id="container-bg-index">
+        <div class="col text-white" id="container-bg-index">
           <h1>El Trading como estilo de vida</h1>
           <h2>Únete a nosotros y nuestra plataforma te ayudará a triunfar</h2>
           <h2>Inicia con ventaja</h2>
-          <button type="button" class="btn mb-2 text-white">Saber más!</button>
+          <a href="#simulator"><button type="button" class="btn mb-2 text-white">Saber más!</button></a>
         </div>
       </div>
     </div>    
@@ -59,10 +60,17 @@
 <!-- fin de la seccion principal -->
 <!-- inicio de la seccion de servicios -->
 <section id="team">
-  <h2 class="text-center my-5">Nuestro Equipo</h2>
+  <h2 class="text-white text-center pt-5">Nuestro Equipo</h2>
   <div class="row">
     <div class="col-md-4 d-flex justify-content-center mt-3">
-      <div class="team-card">
+      <div class="card">
+        <div class="card2 text-center">
+          <img class="img-team" src="./img/team/sebas.PNG" alt="sebas">
+          <h4 class="text-white">Sebastian Amaya</h4>
+          <p class="text-white">Front End Developer Jr.</p>
+        </div>
+      </div>
+      <!-- <div class="team-card">
         <div class="card-border-top">
         </div>
         <div class="img">
@@ -70,10 +78,17 @@
         <span>Sebastian Amaya</span>
         <p class="job"> Front End Developer Jr.</p>
         <button>Contactar</button>
-      </div>
+      </div> -->
     </div>
     <div class="col-md-4 d-flex justify-content-center mt-3">
-      <div class="team-card">
+      <div class="card">
+        <div class="card2 text-center">
+          <img class="img-team" src="./img/team/eren.PNG" alt="johan">
+          <h4 class="text-white">Johan Betancourt</h4>
+          <p class="text-white">Front End Developer Jr.</p>
+        </div>
+      </div>
+      <!-- <div class="team-card">
         <div class="card-border-top">
         </div>
         <div class="img">
@@ -81,10 +96,17 @@
         <span>Johan Betancourt</span>
         <p class="job">Front End Developer Jr.</p>
         <button>Contactar</button>
-      </div>
+      </div> -->
     </div>
     <div class="col-md-4 d-flex justify-content-center mt-3">
-      <div class="team-card">
+      <div class="card">
+        <div class="card2 text-center">
+          <img class="img-team" src="./img/team/karla.PNG" alt="karla">
+          <h4 class="text-white">Karla Avila</h4>
+          <p class="text-white">Front End Developer Jr.</p>
+        </div>
+      </div>
+      <!-- <div class="team-card">
         <div class="card-border-top">
         </div>
         <div class="img">
@@ -92,12 +114,19 @@
         <span>Karla Avila</span>
         <p class="job">Front End Developer Jr.</p>
         <button>Contactar</button>
-      </div>
+      </div> -->
     </div>
   </div>
-  <div class="row">
+  <div class="row pb-5">
     <div class="col-md-4 d-flex justify-content-center mt-3">
-      <div class="team-card">
+      <div class="card">
+        <div class="card2 text-center">
+          <img class="img-team" src="./img/team/daniel.PNG" alt="daniel">
+          <h4 class="text-white">Daniel Ruiz</h4>
+          <p class="text-white">Front End Developer Jr.</p>
+        </div>
+      </div>
+      <!-- <div class="team-card">
         <div class="card-border-top">
         </div>
         <div class="img">
@@ -105,10 +134,17 @@
         <span>Andres Aguilar</span>
         <p class="job">Front End Developer Jr.</p>
         <button>Contactar</button>
-      </div>
+      </div> -->
     </div>
     <div class="col-md-4 d-flex justify-content-center mt-3">
-      <div class="team-card">
+      <div class="card">
+        <div class="card2 text-center">
+          <img class="img-team" src="./img/team/will.PNG" alt="will">
+          <h4 class="text-white">Will Palacios</h4>
+          <p class="text-white">Front End Developer Jr.</p>
+        </div>
+      </div>
+      <!-- <div class="team-card">
         <div class="card-border-top">
         </div>
         <div class="img">
@@ -116,10 +152,17 @@
         <span>Daniel Ruiz</span>
         <p class="job">Front End Developer Jr.</p>
         <button>Contactar</button>
-      </div>
+      </div> -->
     </div>
     <div class="col-md-4 d-flex justify-content-center mt-3">
-      <div class="team-card">
+      <div class="card">
+        <div class="card2 text-center">
+          <img class="img-team" src="./img/team/andres.PNG" alt="andres">
+          <h4 class="text-white">Andres Aguilar</h4>
+          <p class="text-white">Front End Developer Jr.</p>
+        </div>
+      </div>
+      <!-- <div class="team-card">
         <div class="card-border-top">
         </div>
         <div class="img">
@@ -127,26 +170,80 @@
         <span>Will Palacios</span>
         <p class="job">Front End Developer Jr.</p>
         <button> Contactar</button>
-      </div>
+      </div> -->
     </div>
   </div>
 </section>
 <!-- fin de la seccion de servicios -->
 <!-- inicio del simulador -->
-<section id="simulator">
-  
+<section id="simulator">  
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6">
+          <h2 class="pt-5 pb-3">Nuestro Simulador</h2>
+          <p>Fue diseñado para brindarle a nuestros clientes una manera fácil de invertir y ganar fácilmente en el mercado de valores.</p>        
+          <p>El trading o la negociación bursátil, requiere de años de práctica para ser experto en las inversiones; con nuestra plataforma inicia con ventaja.</p>
+          <h4 class="mb-5" id="simulator-call">Haz click en la imagen para probar nuestro simulador</h4>
+        </div>
+        <div class="col-md-6 mt-5 p-3">
+          <a href="./simulator.html" target="_blank"><img src="./img/simulator.PNG" class="img-fluid rounded" id="simulator-img" alt="simulator"></a>
+        </div>
+      </div>
+    </div>    
 </section>
 <!-- fin de la seccion simulador -->
 <!-- inicio de la seccion membresia -->
 <section id="membership">
-
+  <div class="container text-center">
+    <div class="row">
+      <div class="col">
+        <h2 class="mt-5 mb-3 text-white">Membresía</h2>
+        <p class="text-white">Si te gustó nuestro simulador, puedes adquirir nuestra membresía con el 50% de DTO, nuestra plataforma de TradingVIP será tu mejor aliada</p>
+        <a href="./membership.html" target="_blank" style="text-decoration: none;"><h2 id="membership-link">Haz click aquí y adquiérela!</h2></a>
+      </div>
+    </div>
+  </div>
 </section>
 <!-- fin de la seccion membresia -->
 <!-- inicio de la seccion de contactenos -->
 <footer id="contact">
-
+  <div class="row pt-5">
+    <div class="col-md-4 d-flex justify-content-center">
+      <div class="icon">
+        <svg heigth="80" width="80">
+            <circle cx="40" cy="40" r=35 stroke="white" stroke-width="4" fill="none" ></circle>
+        </svg>
+        <i class='bx bxl-instagram'></i>
+    </div>
+    <div class="icon">
+      <svg heigth="80" width="80">
+          <circle cx="40" cy="40" r=35 stroke="white" stroke-width="4" fill="none" ></circle>
+      </svg>
+      <i class='bx bxl-facebook-circle'></i>
+  </div>
+  <div class="icon">
+    <svg heigth="80" width="80">
+        <circle cx="40" cy="40" r=35 stroke="white" stroke-width="4" fill="none" ></circle>
+    </svg>
+    <i class='bx bxl-whatsapp' ></i>
+</div>
+    </div>
+    <div class="col-md-4 text-center">
+      <img src="./img/logo.png" class="logo" alt="logo">
+    </div>
+    <div class="col-md-4 text-white text-center">
+      <h3 class="pb-4">Trading VIP</h3>
+      <p>Calle 195 # 74 - 28 </p>
+      <p>(601) 874 5858 - 645 7812</p>
+      <p>contacto@tradingvip.com</p>
+    </div>
+  </div>
+  <div class="row" style="background-color: #222831 ;">
+    <div class="col text-white d-flex justify-content-center">
+      <h6>&#169 2022 Todos los derechos reservados</h6>
+    </div>
+  </div>
 </footer>
-
     <!-- fin de la seccion contactenos -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="./js/index.js"></script>    
